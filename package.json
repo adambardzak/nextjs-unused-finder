@@ -1,0 +1,44 @@
+{
+  "name": "nextjs-unused-finder",
+  "version": "1.0.0",
+  "description": "Find unused files in Next.js projects with beautiful console output",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "find-unused": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nextjs",
+    "cleanup",
+    "unused-files",
+    "react",
+    "next.js",
+    "typescript",
+    "optimization",
+    "file-analyzer"
+  ],
+  "author": "Adam Bardzak",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adambardzak/nextjs-unused-finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adambardzak/nextjs-unused-finder/issues"
+  },
+  "homepage": "https://github.com/adambardzak/nextjs-unused-finder#readme"
+}
